@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="430" viewBox="0 0 960 430" role="img" aria-labelledby="title">
+<title id="title">32K: exchange M sharing for a narrower retained A band</title>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#607184"/></marker></defs>
+<rect width="100%" height="100%" fill="white"/>
+<g font-family="DejaVu Sans, sans-serif" fill="#273342">
+<text x="28" y="34" font-size="22" fill="#273342" font-weight="600" text-anchor="start">32K: exchange M sharing for a narrower retained A band</text>
+<text x="95" y="78" font-size="18" fill="#273342" font-weight="600" text-anchor="start">Previous: 8 × 2</text>
+<rect x="95" y="104" width="62" height="42" rx="5" fill="#e8dff2" stroke="#c3cbd4" stroke-width="1"/>
+<text x="126.0" y="130.0" font-size="12" fill="#273342" font-weight="400" text-anchor="middle">2 CTAs</text>
+<rect x="161" y="104" width="62" height="42" rx="5" fill="#e8dff2" stroke="#c3cbd4" stroke-width="1"/>
+<text x="192.0" y="130.0" font-size="12" fill="#273342" font-weight="400" text-anchor="middle">2 CTAs</text>
+<rect x="95" y="150" width="62" height="42" rx="5" fill="#e8dff2" stroke="#c3cbd4" stroke-width="1"/>
+<text x="126.0" y="176.0" font-size="12" fill="#273342" font-weight="400" text-anchor="middle">2 CTAs</text>
+<rect x="161" y="150" width="62" height="42" rx="5" fill="#e8dff2" stroke="#c3cbd4" stroke-width="1"/>
+<text x="192.0" y="176.0" font-size="12" fill="#273342" font-weight="400" text-anchor="middle">2 CTAs</text>
+<rect x="95" y="196" width="62" height="42" rx="5" fill="#e8dff2" stroke="#c3cbd4" stroke-width="1"/>
+<text x="126.0" y="222.0" font-size="12" fill="#273342" font-weight="400" text-anchor="middle">2 CTAs</text>
+<rect x="161" y="196" width="62" height="42" rx="5" fill="#e8dff2" stroke="#c3cbd4" stroke-width="1"/>
+<text x="192.0" y="222.0" font-size="12" fill="#273342" font-weight="400" text-anchor="middle">2 CTAs</text>
+<rect x="95" y="242" width="62" height="42" rx="5" fill="#e8dff2" stroke="#c3cbd4" stroke-width="1"/>
+<text x="126.0" y="268.0" font-size="12" fill="#273342" font-weight="400" text-anchor="middle">2 CTAs</text>
+<rect x="161" y="242" width="62" height="42" rx="5" fill="#e8dff2" stroke="#c3cbd4" stroke-width="1"/>
+<text x="192.0" y="268.0" font-size="12" fill="#273342" font-weight="400" text-anchor="middle">2 CTAs</text>
+<text x="95" y="322" font-size="17" fill="#273342" font-weight="400" text-anchor="start">1024 rows × 512 columns</text>
+<text x="95" y="353" font-size="16" fill="#273342" font-weight="400" text-anchor="start">Four M stripes: 4096 A rows</text>
+<text x="95" y="382" font-size="16" fill="#273342" font-weight="400" text-anchor="start">A band: 64 MiB + 8 MiB scales</text>
+<text x="580" y="78" font-size="18" fill="#273342" font-weight="600" text-anchor="start">Final: 4 × 4</text>
+<rect x="580" y="104" width="62" height="42" rx="5" fill="#e8dff2" stroke="#c3cbd4" stroke-width="1"/>
+<text x="611.0" y="130.0" font-size="12" fill="#273342" font-weight="400" text-anchor="middle">2 CTAs</text>
+<rect x="646" y="104" width="62" height="42" rx="5" fill="#e8dff2" stroke="#c3cbd4" stroke-width="1"/>
+<text x="677.0" y="130.0" font-size="12" fill="#273342" font-weight="400" text-anchor="middle">2 CTAs</text>
+<rect x="712" y="104" width="62" height="42" rx="5" fill="#e8dff2" stroke="#c3cbd4" stroke-width="1"/>
+<text x="743.0" y="130.0" font-size="12" fill="#273342" font-weight="400" text-anchor="middle">2 CTAs</text>
+<rect x="778" y="104" width="62" height="42" rx="5" fill="#e8dff2" stroke="#c3cbd4" stroke-width="1"/>
+<text x="809.0" y="130.0" font-size="12" fill="#273342" font-weight="400" text-anchor="middle">2 CTAs</text>
+<rect x="580" y="150" width="62" height="42" rx="5" fill="#e8dff2" stroke="#c3cbd4" stroke-width="1"/>
+<text x="611.0" y="176.0" font-size="12" fill="#273342" font-weight="400" text-anchor="middle">2 CTAs</text>
+<rect x="646" y="150" width="62" height="42" rx="5" fill="#e8dff2" stroke="#c3cbd4" stroke-width="1"/>
+<text x="677.0" y="176.0" font-size="12" fill="#273342" font-weight="400" text-anchor="middle">2 CTAs</text>
+<rect x="712" y="150" width="62" height="42" rx="5" fill="#e8dff2" stroke="#c3cbd4" stroke-width="1"/>
+<text x="743.0" y="176.0" font-size="12" fill="#273342" font-weight="400" text-anchor="middle">2 CTAs</text>
+<rect x="778" y="150" width="62" height="42" rx="5" fill="#e8dff2" stroke="#c3cbd4" stroke-width="1"/>
+<text x="809.0" y="176.0" font-size="12" fill="#273342" font-weight="400" text-anchor="middle">2 CTAs</text>
+<text x="580" y="322" font-size="17" fill="#273342" font-weight="400" text-anchor="start">512 rows × 1024 columns</text>
+<text x="580" y="353" font-size="16" fill="#273342" font-weight="400" text-anchor="start">Four M stripes: 2048 A rows</text>
+<text x="580" y="382" font-size="16" fill="#273342" font-weight="400" text-anchor="start">A band: 32 MiB + 4 MiB scales</text>
+<path d="M315,191 L525,191" fill="none" stroke="#607184" stroke-width="1.7" marker-end="url(#arrow)"/>
+<text x="420" y="157" font-size="16" fill="#273342" font-weight="400" text-anchor="middle">A multicast: 2 → 4</text>
+<text x="420" y="231" font-size="16" fill="#273342" font-weight="400" text-anchor="middle">B multicast: 4 → 2</text>
+<text x="28" y="418" font-size="15" fill="#5d6977" font-weight="400" text-anchor="start">Both use 16 CTAs and the same eight 256 × 256 MMA tiles per cluster.</text>
+</g>
+</svg>

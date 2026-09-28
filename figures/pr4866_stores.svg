@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="335" viewBox="0 0 960 335" role="img" aria-labelledby="title">
+<title id="title">Baseline: layout and alignment for vectorized output stores</title>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#607184"/></marker></defs>
+<rect width="100%" height="100%" fill="white"/>
+<g font-family="DejaVu Sans, sans-serif" fill="#273342">
+<text x="28" y="34" font-size="22" fill="#273342" font-weight="600" text-anchor="start">Baseline: layout and alignment for vectorized output stores</text>
+<rect x="28" y="72" width="275" height="76" rx="5" fill="#dce9f5" stroke="#c3cbd4" stroke-width="1"/>
+<text x="165.5" y="104.0" font-size="15" fill="#273342" font-weight="400" text-anchor="middle">Compact N-contiguous layout</text>
+<text x="165.5" y="126.0" font-size="15" fill="#273342" font-weight="400" text-anchor="middle">N is divisible by 64</text>
+<path d="M165.5,156 L480,203" fill="none" stroke="#607184" stroke-width="1.7" marker-end="url(#arrow)"/>
+<rect x="342" y="72" width="275" height="76" rx="5" fill="#dceee8" stroke="#c3cbd4" stroke-width="1"/>
+<text x="479.5" y="104.0" font-size="15" fill="#273342" font-weight="400" text-anchor="middle">32-byte pointer alignment</text>
+<text x="479.5" y="126.0" font-size="15" fill="#273342" font-weight="400" text-anchor="middle">checked at the FFI boundary</text>
+<path d="M479.5,156 L480,203" fill="none" stroke="#607184" stroke-width="1.7" marker-end="url(#arrow)"/>
+<rect x="656" y="72" width="275" height="76" rx="5" fill="#e8dff2" stroke="#c3cbd4" stroke-width="1"/>
+<text x="793.5" y="104.0" font-size="15" fill="#273342" font-weight="400" text-anchor="middle">Register/output common layout</text>
+<text x="793.5" y="126.0" font-size="15" fill="#273342" font-weight="400" text-anchor="middle">256-bit copy-width cap</text>
+<path d="M793.5,156 L480,203" fill="none" stroke="#607184" stroke-width="1.7" marker-end="url(#arrow)"/>
+<rect x="246" y="211" width="468" height="56" rx="5" fill="#fae9d5" stroke="#c3cbd4" stroke-width="1"/>
+<text x="480.0" y="244.0" font-size="16" fill="#273342" font-weight="400" text-anchor="middle">CopyR2GOp: up to 16 × FP16/BF16 per store</text>
+<text x="480" y="310" font-size="16" fill="#273342" font-weight="400" text-anchor="middle">Layout, stride and alignment must all support the wider copy.</text>
+</g>
+</svg>

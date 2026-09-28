@@ -1,0 +1,293 @@
+{
+  "size": 4096,
+  "rounds": 8,
+  "date": "2026-09-28T04:39:51Z",
+  "gpu": "NVIDIA B300 SXM6 AC",
+  "gpu_uuid": "GPU-e62dca8e-f114-93f7-c239-ed114e6f9bbb",
+  "torch": "2.13.0+cu130",
+  "cupti_python": "13.4.0",
+  "timing": "CUPTI; CUDA graph; cold L2; cooldown; 50 samples/round",
+  "reference_checks": {
+    "torch.float16": {
+      "bit_exact": false,
+      "relative_l2": 0.00020748740861646316,
+      "finite": true
+    },
+    "torch.bfloat16": {
+      "bit_exact": false,
+      "relative_l2": 0.0016502768665402248,
+      "finite": true
+    }
+  },
+  "results": {
+    "preset": {
+      "dtype": "torch.float16",
+      "correctness": {
+        "bit_exact": true,
+        "relative_l2": 0.0,
+        "finite": true
+      },
+      "samples_us": [
+        22.048000000000002,
+        22.08,
+        22.0005,
+        22.048000000000002,
+        22.048000000000002,
+        22.336000000000002,
+        22.048000000000002,
+        22.352
+      ],
+      "median_us": 22.048000000000002,
+      "tflops": 6233.624522496371
+    },
+    "fastcu": {
+      "schedule": "pocket-8x8",
+      "schedule_screen_us": {
+        "raster": 26.28,
+        "pocket-8x4": 25.27225,
+        "pocket-8x8": 25.13625,
+        "hilbert": 25.216,
+        "owned-plain": 26.35275,
+        "owned-pocket-8x4": 25.816499999999998,
+        "owned-pocket-8x8": 25.5285,
+        "hilbert-in-owned": 25.472,
+        "auto": 26.3365
+      },
+      "dtype": "torch.float16",
+      "correctness": {
+        "bit_exact": true,
+        "relative_l2": 0.0,
+        "finite": true
+      },
+      "samples_us": [
+        24.8325,
+        25.184,
+        24.944000000000003,
+        24.864,
+        24.864,
+        25.184,
+        24.896,
+        25.152
+      ],
+      "median_us": 24.92,
+      "tflops": 5515.206800642055
+    },
+    "cublaslt": {
+      "version": 130800,
+      "workspace_bytes": 0,
+      "dtype": "torch.float16",
+      "correctness": {
+        "bit_exact": true,
+        "relative_l2": 0.0,
+        "finite": true
+      },
+      "samples_us": [
+        24.767999999999997,
+        25.360500000000002,
+        25.3445,
+        24.8,
+        24.736,
+        25.375999999999998,
+        24.8005,
+        25.472
+      ],
+      "median_us": 25.072499999999998,
+      "tflops": 5481.661321048959
+    },
+    "thunderkittens": {
+      "padded_k": 4608,
+      "dtype": "torch.bfloat16",
+      "correctness": {
+        "bit_exact": true,
+        "relative_l2": 0.0,
+        "finite": true
+      },
+      "samples_us": [
+        31.648499999999995,
+        31.808000000000003,
+        31.744,
+        31.744,
+        31.824000000000005,
+        31.7285,
+        31.776,
+        31.744500000000002
+      ],
+      "median_us": 31.74425,
+      "tflops": 4329.570031486017
+    },
+    "quack": {
+      "tuned": true,
+      "dtype": "torch.float16",
+      "correctness": {
+        "bit_exact": true,
+        "relative_l2": 0.0,
+        "finite": true
+      },
+      "samples_us": [
+        28.8645,
+        28.608,
+        28.9285,
+        28.704,
+        28.864,
+        28.8645,
+        28.944,
+        28.816000000000003
+      ],
+      "median_us": 28.86425,
+      "tflops": 4761.563299652686
+    },
+    "cutlass": {
+      "autotuned": true,
+      "dtype": "torch.float16",
+      "correctness": {
+        "bit_exact": true,
+        "relative_l2": 0.0,
+        "finite": true
+      },
+      "samples_us": [
+        28.16,
+        27.52,
+        28.144500000000004,
+        27.472499999999997,
+        28.1605,
+        27.392500000000002,
+        28.128500000000003,
+        28.032
+      ],
+      "median_us": 28.08025,
+      "tflops": 4894.506048628485
+    },
+    "cudnn": {
+      "autotuned": true,
+      "dtype": "torch.float16",
+      "correctness": {
+        "bit_exact": true,
+        "relative_l2": 0.0,
+        "finite": true
+      },
+      "samples_us": [
+        25.7125,
+        25.2805,
+        25.936500000000002,
+        25.088,
+        25.776500000000002,
+        24.976,
+        25.0885,
+        25.823999999999998
+      ],
+      "median_us": 25.496499999999997,
+      "tflops": 5390.502754181946
+    },
+    "cute-dsl": {
+      "autotuned": true,
+      "dtype": "torch.float16",
+      "correctness": {
+        "bit_exact": true,
+        "relative_l2": 0.0,
+        "finite": true
+      },
+      "samples_us": [
+        27.552500000000002,
+        27.472,
+        27.52,
+        27.5365,
+        27.488,
+        27.424500000000002,
+        27.52,
+        27.473
+      ],
+      "median_us": 27.503999999999998,
+      "tflops": 4997.05328214078
+    }
+  },
+  "errors": {},
+  "gpu_checks": [
+    {
+      "round": 1,
+      "compute_pids": [
+        "1864339"
+      ]
+    },
+    {
+      "round": 2,
+      "compute_pids": [
+        "1864339"
+      ]
+    },
+    {
+      "round": 3,
+      "compute_pids": [
+        "1864339"
+      ]
+    },
+    {
+      "round": 4,
+      "compute_pids": [
+        "1864339"
+      ]
+    },
+    {
+      "round": 5,
+      "compute_pids": [
+        "1864339"
+      ]
+    },
+    {
+      "round": 6,
+      "compute_pids": [
+        "1864339"
+      ]
+    },
+    {
+      "round": 7,
+      "compute_pids": [
+        "1864339"
+      ]
+    },
+    {
+      "round": 8,
+      "compute_pids": [
+        "1864339"
+      ]
+    }
+  ],
+  "config": {
+    "cluster": [
+      4,
+      2
+    ],
+    "fallback": [
+      2,
+      1
+    ],
+    "persist_mb": 0,
+    "attrs": {
+      "epi_store_pace_per_ktile_ns": 50,
+      "fast_swz": 2,
+      "prefetch_first_ktiles": 1,
+      "raster_along_m": false
+    }
+  },
+  "source_sha256": {
+    "nvfp4_gemm_cute/kernel.py": "6727aee5f698badb363d20c5a27155da9a0328694012c6c34eee4dc0deb5b7b4",
+    "nvfp4_gemm_cute/epilogue.py": "83b09decd1c9402c9cc547dd5db8996a242178d221bba939d3cab0931ffa3cbc",
+    "nvfp4_gemm_cute/api.py": "96fde411c524d21450c9bb3ed51f16ccf25e97000f326bef25733558d9973567",
+    "nvfp4_gemm_cute/presets.py": "3fa0a64c5a6b6ea447d092295b961933847250c9ab956e15268bde69db28d712",
+    "benchmarks/compare.py": "365bd8d894e7930f09cea5e77288d1b9d221e52f8a90776490fe62dcf245bc43",
+    "benchmarks/harness.py": "d41f3f0d20126c2ceb589d54cd46efdb43fa40202a9c456c3aac98e4d0c5aaf3"
+  },
+  "loaded_libraries": [
+    "/sgl-workspace/nvfp4-latest-nvidia/nvidia/cu13/lib/libcublas.so.13",
+    "/sgl-workspace/nvfp4-latest-nvidia/nvidia/cu13/lib/libcublasLt.so.13",
+    "/sgl-workspace/nvfp4-latest-nvidia/nvidia/cu13/lib/libcupti.so.13",
+    "/sgl-workspace/nvfp4-latest-nvidia/nvidia/cu13/lib/libnvrtc-builtins.so.13.4",
+    "/sgl-workspace/nvfp4-latest-nvidia/nvidia/cu13/lib/libnvrtc.so.13",
+    "/sgl-workspace/nvfp4-latest-nvidia/nvidia/cudnn/lib/libcudnn.so.9",
+    "/sgl-workspace/nvfp4-latest-nvidia/nvidia/cudnn/lib/libcudnn_engines_precompiled.so.9",
+    "/sgl-workspace/nvfp4-latest-nvidia/nvidia/cudnn/lib/libcudnn_engines_runtime_compiled.so.9",
+    "/sgl-workspace/nvfp4-latest-nvidia/nvidia/cudnn/lib/libcudnn_engines_tensor_ir.so.9",
+    "/sgl-workspace/nvfp4-latest-nvidia/nvidia/cudnn/lib/libcudnn_graph.so.9",
+    "/sgl-workspace/nvfp4-latest-nvidia/nvidia/cudnn/lib/libcudnn_heuristic.so.9",
+    "/sgl-workspace/nvfp4-multilib/benchmarks/libcublaslt_bench.so"
+  ]
+}

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="350" viewBox="0 0 960 350" role="img" aria-labelledby="title">
+<title id="title">Shared epilogue: release before the first global store</title>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#607184"/></marker></defs>
+<rect width="100%" height="100%" fill="white"/>
+<g font-family="DejaVu Sans, sans-serif" fill="#273342">
+<text x="28" y="34" font-size="22" fill="#273342" font-weight="600" text-anchor="start">Shared epilogue: release before the first global store</text>
+<text x="28" y="77" font-size="17" fill="#273342" font-weight="600" text-anchor="start">Baseline</text>
+<rect x="170" y="53" width="130" height="50" rx="5" fill="#dce9f5" stroke="#c3cbd4" stroke-width="1"/>
+<text x="235.0" y="83.0" font-size="14" fill="#273342" font-weight="400" text-anchor="middle">Load subtile 0</text>
+<rect x="330" y="53" width="145" height="50" rx="5" fill="#fae9d5" stroke="#c3cbd4" stroke-width="1"/>
+<text x="402.5" y="83.0" font-size="14" fill="#273342" font-weight="400" text-anchor="middle">Convert + store 0</text>
+<rect x="505" y="53" width="130" height="50" rx="5" fill="#dce9f5" stroke="#c3cbd4" stroke-width="1"/>
+<text x="570.0" y="83.0" font-size="14" fill="#273342" font-weight="400" text-anchor="middle">Load subtile 1</text>
+<rect x="665" y="53" width="105" height="50" rx="5" fill="#dceee8" stroke="#c3cbd4" stroke-width="1"/>
+<text x="717.5" y="72.0" font-size="14" fill="#273342" font-weight="400" text-anchor="middle">Fence +</text>
+<text x="717.5" y="94.0" font-size="14" fill="#273342" font-weight="400" text-anchor="middle">release</text>
+<rect x="800" y="53" width="130" height="50" rx="5" fill="#e8dff2" stroke="#c3cbd4" stroke-width="1"/>
+<text x="865.0" y="72.0" font-size="14" fill="#273342" font-weight="400" text-anchor="middle">Convert +</text>
+<text x="865.0" y="94.0" font-size="14" fill="#273342" font-weight="400" text-anchor="middle">store 1, …</text>
+<path d="M305,78 L323,78" fill="none" stroke="#607184" stroke-width="1.7" marker-end="url(#arrow)"/>
+<path d="M480,78 L498,78" fill="none" stroke="#607184" stroke-width="1.7" marker-end="url(#arrow)"/>
+<path d="M640,78 L658,78" fill="none" stroke="#607184" stroke-width="1.7" marker-end="url(#arrow)"/>
+<path d="M775,78 L793,78" fill="none" stroke="#607184" stroke-width="1.7" marker-end="url(#arrow)"/>
+<text x="28" y="167" font-size="17" fill="#273342" font-weight="600" text-anchor="start">GEMM³</text>
+<rect x="170" y="143" width="130" height="50" rx="5" fill="#dce9f5" stroke="#c3cbd4" stroke-width="1"/>
+<text x="235.0" y="173.0" font-size="14" fill="#273342" font-weight="400" text-anchor="middle">Load subtile 0</text>
+<rect x="330" y="143" width="145" height="50" rx="5" fill="#dce9f5" stroke="#c3cbd4" stroke-width="1"/>
+<text x="402.5" y="173.0" font-size="14" fill="#273342" font-weight="400" text-anchor="middle">Load subtile 1</text>
+<rect x="505" y="143" width="130" height="50" rx="5" fill="#dceee8" stroke="#c3cbd4" stroke-width="1"/>
+<text x="570.0" y="173.0" font-size="14" fill="#273342" font-weight="400" text-anchor="middle">Fence + release</text>
+<rect x="665" y="143" width="265" height="50" rx="5" fill="#e8dff2" stroke="#c3cbd4" stroke-width="1"/>
+<text x="797.5" y="173.0" font-size="14" fill="#273342" font-weight="400" text-anchor="middle">Convert + store 0, then 1, …</text>
+<path d="M305,168 L323,168" fill="none" stroke="#607184" stroke-width="1.7" marker-end="url(#arrow)"/>
+<path d="M480,168 L498,168" fill="none" stroke="#607184" stroke-width="1.7" marker-end="url(#arrow)"/>
+<path d="M640,168 L658,168" fill="none" stroke="#607184" stroke-width="1.7" marker-end="url(#arrow)"/>
+<text x="170" y="242" font-size="17" fill="#273342" font-weight="400" text-anchor="start">Two 32-column subtiles cover the 36-column overlap.</text>
+<text x="170" y="274" font-size="16" fill="#273342" font-weight="400" text-anchor="start">The next tile can acquire the accumulator before output traffic starts.</text>
+<text x="170" y="313" font-size="15" fill="#5d6977" font-weight="400" text-anchor="start">The release still follows a TMEM-read fence in both paths.</text>
+</g>
+</svg>

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="400" viewBox="0 0 960 400" role="img" aria-labelledby="title">
+<title id="title">Change the reuse footprint, keep the 256 × 256 MMA tile</title>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#607184"/></marker></defs>
+<rect width="100%" height="100%" fill="white"/>
+<g font-family="DejaVu Sans, sans-serif" fill="#273342">
+<text x="28" y="34" font-size="22" fill="#273342" font-weight="600" text-anchor="start">Change the reuse footprint, keep the 256 × 256 MMA tile</text>
+<text x="35" y="78" font-size="18" fill="#273342" font-weight="600" text-anchor="start">General: 4 × 1</text>
+<rect x="35" y="100" width="105" height="40" rx="5" fill="#e8dff2" stroke="#c3cbd4" stroke-width="1"/>
+<text x="87.5" y="125.0" font-size="14" fill="#273342" font-weight="400" text-anchor="middle">256 × 256</text>
+<rect x="35" y="148" width="105" height="40" rx="5" fill="#e8dff2" stroke="#c3cbd4" stroke-width="1"/>
+<text x="87.5" y="173.0" font-size="14" fill="#273342" font-weight="400" text-anchor="middle">256 × 256</text>
+<text x="35" y="320" font-size="16" fill="#273342" font-weight="400" text-anchor="start">512 rows × 256 columns</text>
+<text x="35" y="345" font-size="14" fill="#5d6977" font-weight="400" text-anchor="start">4 CTAs; each box = 2 CTAs</text>
+<text x="310" y="78" font-size="18" fill="#273342" font-weight="600" text-anchor="start">4K: 4 × 2</text>
+<rect x="310" y="100" width="105" height="40" rx="5" fill="#e8dff2" stroke="#c3cbd4" stroke-width="1"/>
+<text x="362.5" y="125.0" font-size="14" fill="#273342" font-weight="400" text-anchor="middle">256 × 256</text>
+<rect x="425" y="100" width="105" height="40" rx="5" fill="#e8dff2" stroke="#c3cbd4" stroke-width="1"/>
+<text x="477.5" y="125.0" font-size="14" fill="#273342" font-weight="400" text-anchor="middle">256 × 256</text>
+<rect x="310" y="148" width="105" height="40" rx="5" fill="#e8dff2" stroke="#c3cbd4" stroke-width="1"/>
+<text x="362.5" y="173.0" font-size="14" fill="#273342" font-weight="400" text-anchor="middle">256 × 256</text>
+<rect x="425" y="148" width="105" height="40" rx="5" fill="#e8dff2" stroke="#c3cbd4" stroke-width="1"/>
+<text x="477.5" y="173.0" font-size="14" fill="#273342" font-weight="400" text-anchor="middle">256 × 256</text>
+<text x="310" y="320" font-size="16" fill="#273342" font-weight="400" text-anchor="start">512 rows × 512 columns</text>
+<text x="310" y="345" font-size="14" fill="#5d6977" font-weight="400" text-anchor="start">8 CTAs; each box = 2 CTAs</text>
+<text x="635" y="78" font-size="18" fill="#273342" font-weight="600" text-anchor="start">8K / 16K: 8 × 2</text>
+<rect x="635" y="100" width="105" height="40" rx="5" fill="#e8dff2" stroke="#c3cbd4" stroke-width="1"/>
+<text x="687.5" y="125.0" font-size="14" fill="#273342" font-weight="400" text-anchor="middle">256 × 256</text>
+<rect x="750" y="100" width="105" height="40" rx="5" fill="#e8dff2" stroke="#c3cbd4" stroke-width="1"/>
+<text x="802.5" y="125.0" font-size="14" fill="#273342" font-weight="400" text-anchor="middle">256 × 256</text>
+<rect x="635" y="148" width="105" height="40" rx="5" fill="#e8dff2" stroke="#c3cbd4" stroke-width="1"/>
+<text x="687.5" y="173.0" font-size="14" fill="#273342" font-weight="400" text-anchor="middle">256 × 256</text>
+<rect x="750" y="148" width="105" height="40" rx="5" fill="#e8dff2" stroke="#c3cbd4" stroke-width="1"/>
+<text x="802.5" y="173.0" font-size="14" fill="#273342" font-weight="400" text-anchor="middle">256 × 256</text>
+<rect x="635" y="196" width="105" height="40" rx="5" fill="#e8dff2" stroke="#c3cbd4" stroke-width="1"/>
+<text x="687.5" y="221.0" font-size="14" fill="#273342" font-weight="400" text-anchor="middle">256 × 256</text>
+<rect x="750" y="196" width="105" height="40" rx="5" fill="#e8dff2" stroke="#c3cbd4" stroke-width="1"/>
+<text x="802.5" y="221.0" font-size="14" fill="#273342" font-weight="400" text-anchor="middle">256 × 256</text>
+<rect x="635" y="244" width="105" height="40" rx="5" fill="#e8dff2" stroke="#c3cbd4" stroke-width="1"/>
+<text x="687.5" y="269.0" font-size="14" fill="#273342" font-weight="400" text-anchor="middle">256 × 256</text>
+<rect x="750" y="244" width="105" height="40" rx="5" fill="#e8dff2" stroke="#c3cbd4" stroke-width="1"/>
+<text x="802.5" y="269.0" font-size="14" fill="#273342" font-weight="400" text-anchor="middle">256 × 256</text>
+<text x="635" y="320" font-size="16" fill="#273342" font-weight="400" text-anchor="start">1024 rows × 512 columns</text>
+<text x="635" y="345" font-size="14" fill="#5d6977" font-weight="400" text-anchor="start">16 CTAs; each box = 2 CTAs</text>
+<text x="28" y="383" font-size="16" fill="#273342" font-weight="400" text-anchor="start">A is shared across the N direction →     B is shared across the M direction ↓</text>
+</g>
+</svg>

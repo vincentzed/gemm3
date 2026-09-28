@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="330" viewBox="0 0 960 330" role="img" aria-labelledby="title">
+<title id="title">16K: prepare shared-memory MMA descriptors before the wait</title>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#607184"/></marker></defs>
+<rect width="100%" height="100%" fill="white"/>
+<g font-family="DejaVu Sans, sans-serif" fill="#273342">
+<text x="28" y="34" font-size="22" fill="#273342" font-weight="600" text-anchor="start">16K: prepare shared-memory MMA descriptors before the wait</text>
+<text x="28" y="82" font-size="17" fill="#273342" font-weight="600" text-anchor="start">Before</text>
+<rect x="170" y="58" width="150" height="50" rx="5" fill="#edf0f3" stroke="#c3cbd4" stroke-width="1"/>
+<text x="245.0" y="88.0" font-size="16" fill="#273342" font-weight="400" text-anchor="middle">Wait for A/B</text>
+<path d="M327,83 L357,83" fill="none" stroke="#607184" stroke-width="1.7" marker-end="url(#arrow)"/>
+<rect x="365" y="58" width="280" height="50" rx="5" fill="#dce9f5" stroke="#c3cbd4" stroke-width="1"/>
+<text x="505.0" y="88.0" font-size="15" fill="#273342" font-weight="400" text-anchor="middle">Construct A + B descriptors</text>
+<path d="M652,83 L682,83" fill="none" stroke="#607184" stroke-width="1.7" marker-end="url(#arrow)"/>
+<rect x="690" y="58" width="220" height="50" rx="5" fill="#e8dff2" stroke="#c3cbd4" stroke-width="1"/>
+<text x="800.0" y="88.0" font-size="16" fill="#273342" font-weight="400" text-anchor="middle">Issue MMA</text>
+<text x="28" y="159" font-size="17" fill="#273342" font-weight="600" text-anchor="start">16K preset</text>
+<rect x="170" y="135" width="280" height="50" rx="5" fill="#dce9f5" stroke="#c3cbd4" stroke-width="1"/>
+<text x="310.0" y="165.0" font-size="15" fill="#273342" font-weight="400" text-anchor="middle">Pack stage-address templates</text>
+<path d="M457,160 L487,160" fill="none" stroke="#607184" stroke-width="1.7" marker-end="url(#arrow)"/>
+<rect x="495" y="135" width="150" height="50" rx="5" fill="#edf0f3" stroke="#c3cbd4" stroke-width="1"/>
+<text x="570.0" y="165.0" font-size="16" fill="#273342" font-weight="400" text-anchor="middle">Wait for A/B</text>
+<path d="M652,160 L682,160" fill="none" stroke="#607184" stroke-width="1.7" marker-end="url(#arrow)"/>
+<rect x="690" y="135" width="220" height="50" rx="5" fill="#e8dff2" stroke="#c3cbd4" stroke-width="1"/>
+<text x="800.0" y="165.0" font-size="14" fill="#273342" font-weight="400" text-anchor="middle">Add offset → issue MMA</text>
+<rect x="170" y="217" width="195" height="54" rx="5" fill="#dceee8" stroke="#c3cbd4" stroke-width="1"/>
+<text x="267.5" y="238.0" font-size="15" fill="#273342" font-weight="400" text-anchor="middle">Within slice</text>
+<text x="267.5" y="260.0" font-size="15" fill="#273342" font-weight="400" text-anchor="middle">(current, current)</text>
+<rect x="385" y="217" width="195" height="54" rx="5" fill="#fae9d5" stroke="#c3cbd4" stroke-width="1"/>
+<text x="482.5" y="238.0" font-size="15" fill="#273342" font-weight="400" text-anchor="middle">Cross slice</text>
+<text x="482.5" y="260.0" font-size="15" fill="#273342" font-weight="400" text-anchor="middle">(current, next)</text>
+<text x="603" y="236" font-size="16" fill="#273342" font-weight="400" text-anchor="start">Layout bits stay fixed.</text>
+<text x="603" y="262" font-size="15" fill="#5d6977" font-weight="400" text-anchor="start">Only addresses and offsets vary.</text>
+<text x="170" y="307" font-size="16" fill="#273342" font-weight="400" text-anchor="start">Address arithmetic moves; the data-readiness barrier stays in place.</text>
+</g>
+</svg>

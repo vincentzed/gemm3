@@ -1,0 +1,5 @@
+recursive-include benchmarks *.py *.json *.cu
+recursive-include examples *.py
+recursive-include tests *.py
+recursive-include docs *.md
+recursive-include figures *.py *.svg *.pdf *.png

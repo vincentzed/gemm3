@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="320" viewBox="0 0 960 320" role="img" aria-labelledby="title">
+<title id="title">4K: move the first memory request into cluster setup</title>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#607184"/></marker></defs>
+<rect width="100%" height="100%" fill="white"/>
+<g font-family="DejaVu Sans, sans-serif" fill="#273342">
+<text x="28" y="34" font-size="22" fill="#273342" font-weight="600" text-anchor="start">4K: move the first memory request into cluster setup</text>
+<text x="28" y="78" font-size="17" fill="#273342" font-weight="600" text-anchor="start">Before</text>
+<rect x="155" y="55" width="195" height="52" rx="5" fill="#edf0f3" stroke="#c3cbd4" stroke-width="1"/>
+<text x="252.5" y="86.0" font-size="16" fill="#273342" font-weight="400" text-anchor="middle">Cluster setup</text>
+<path d="M355,81 L385,81" fill="none" stroke="#607184" stroke-width="1.7" marker-end="url(#arrow)"/>
+<rect x="392" y="55" width="220" height="52" rx="5" fill="#dce9f5" stroke="#c3cbd4" stroke-width="1"/>
+<text x="502.0" y="86.0" font-size="16" fill="#273342" font-weight="400" text-anchor="middle">TMA loads → wait</text>
+<path d="M617,81 L647,81" fill="none" stroke="#607184" stroke-width="1.7" marker-end="url(#arrow)"/>
+<rect x="654" y="55" width="245" height="52" rx="5" fill="#e8dff2" stroke="#c3cbd4" stroke-width="1"/>
+<text x="776.5" y="86.0" font-size="16" fill="#273342" font-weight="400" text-anchor="middle">First K iteration</text>
+<text x="28" y="156" font-size="17" fill="#273342" font-weight="600" text-anchor="start">4K preset</text>
+<rect x="155" y="130" width="330" height="52" rx="5" fill="#edf0f3" stroke="#c3cbd4" stroke-width="1"/>
+<text x="320.0" y="161.0" font-size="16" fill="#273342" font-weight="400" text-anchor="middle">Cluster setup</text>
+<rect x="155" y="196" width="330" height="48" rx="5" fill="#dceee8" stroke="#c3cbd4" stroke-width="1"/>
+<text x="320.0" y="225.0" font-size="15" fill="#273342" font-weight="400" text-anchor="middle">Prefetch A, B, SFA, SFB into L2</text>
+<path d="M492,156 L522,156" fill="none" stroke="#607184" stroke-width="1.7" marker-end="url(#arrow)"/>
+<rect x="530" y="130" width="182" height="52" rx="5" fill="#dce9f5" stroke="#c3cbd4" stroke-width="1"/>
+<text x="621.0" y="161.0" font-size="15" fill="#273342" font-weight="400" text-anchor="middle">TMA loads → wait</text>
+<path d="M718,156 L748,156" fill="none" stroke="#607184" stroke-width="1.7" marker-end="url(#arrow)"/>
+<rect x="756" y="130" width="143" height="52" rx="5" fill="#e8dff2" stroke="#c3cbd4" stroke-width="1"/>
+<text x="827.5" y="161.0" font-size="14" fill="#273342" font-weight="400" text-anchor="middle">First K iteration</text>
+<path d="M485,220 L530,183" fill="none" stroke="#607184" stroke-width="1.7" marker-end="url(#arrow)"/>
+<text x="155" y="275" font-size="16" fill="#273342" font-weight="400" text-anchor="start">Prefetch covers the first 768 K values of each CTA’s first output tile.</text>
+<text x="155" y="301" font-size="15" fill="#5d6977" font-weight="400" text-anchor="start">The normal TMA transfer and its readiness barrier are still required.</text>
+</g>
+</svg>

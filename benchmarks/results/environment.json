@@ -1,0 +1,27 @@
+{
+  "nvidia-cublas": "13.8.0.4",
+  "nvidia-cudnn-cu13": "9.26.0.51",
+  "nvidia-cuda-nvcc": "13.4.92",
+  "nvidia-cuda-runtime": "13.4.92",
+  "nvidia-cuda-nvrtc": "13.4.92",
+  "nvidia-cuda-cupti": "13.4.92",
+  "nvidia-cutlass-dsl": "4.8.0",
+  "cupti-python": "13.4.0",
+  "nvidia-cudnn-frontend": "1.31.0",
+  "flashinfer-python": "0.7.0",
+  "torch": "2.13.0",
+  "nvidia-curand": "10.4.4.72",
+  "kernel_sha256": "42ab2d399c65eb4b0aa9373fc81221869018a6c55f6f172d7e3cc4bc3074fd84",
+  "driver": "615.71.09",
+  "gpu_uuid": "GPU-e62dca8e-f114-93f7-c239-ed114e6f9bbb",
+  "power_limit_watts": 1100,
+  "max_sm_clock_mhz": 2032,
+  "max_memory_clock_mhz": 3996,
+  "adapter_sha256": {
+    "libtk_bench.so": "073afa7ea8dd51e3a7f8f67f3c0a33f3d18009b99fad74496a97ed66a397c0aa",
+    "libfastcu_latest_32k.so": "1d089d29622138bc717d779c6fbf112e2dc165acb93bb1bc79c27855347b78b5",
+    "libfastcu_latest.so": "d97c8b8a2f0d43655d8f0b44c76d3452689b6fcf22e78d8aa01aad88fc5c91f6",
+    "libcublaslt_bench.so": "c4a12c1996eea44db412e5644f87aeed764606d384e335ae326d348be0160cce"
+  },
+  "deep-gemm": "2.8.0+local"
+}

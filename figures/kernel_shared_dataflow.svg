@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="370" viewBox="0 0 960 370" role="img" aria-labelledby="title">
+<title id="title">The scale path used by GEMM³ presets</title>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#607184"/></marker></defs>
+<rect width="100%" height="100%" fill="white"/>
+<g font-family="DejaVu Sans, sans-serif" fill="#273342">
+<text x="28" y="34" font-size="22" fill="#273342" font-weight="600" text-anchor="start">The scale path used by GEMM³ presets</text>
+<text x="28" y="80" font-size="17" fill="#273342" font-weight="600" text-anchor="start">A / B</text>
+<rect x="180" y="56" width="170" height="54" rx="5" fill="#dce9f5" stroke="#c3cbd4" stroke-width="1"/>
+<text x="265.0" y="88.0" font-size="16" fill="#273342" font-weight="400" text-anchor="middle">Global NVFP4</text>
+<path d="M360,83 L470,83" fill="none" stroke="#607184" stroke-width="1.7" marker-end="url(#arrow)"/>
+<text x="415" y="68" font-size="14" fill="#5d6977" font-weight="400" text-anchor="middle">TMA</text>
+<rect x="480" y="56" width="210" height="54" rx="5" fill="#dce9f5" stroke="#c3cbd4" stroke-width="1"/>
+<text x="585.0" y="88.0" font-size="15" fill="#273342" font-weight="400" text-anchor="middle">Shared-memory ring</text>
+<path d="M700,83 L840,83" fill="none" stroke="#607184" stroke-width="1.7" marker-end="url(#arrow)"/>
+<rect x="850" y="56" width="82" height="164" rx="5" fill="#e8dff2" stroke="#c3cbd4" stroke-width="1"/>
+<text x="891.0" y="143.0" font-size="16" fill="#273342" font-weight="400" text-anchor="middle">MMA</text>
+<text x="28" y="191" font-size="17" fill="#273342" font-weight="600" text-anchor="start">SFA / SFB</text>
+<rect x="180" y="167" width="170" height="54" rx="5" fill="#dceee8" stroke="#c3cbd4" stroke-width="1"/>
+<text x="265.0" y="199.0" font-size="16" fill="#273342" font-weight="400" text-anchor="middle">Global E4M3</text>
+<path d="M360,194 L400,194" fill="none" stroke="#607184" stroke-width="1.7" marker-end="url(#arrow)"/>
+<text x="380" y="160" font-size="13" fill="#5d6977" font-weight="400" text-anchor="middle">TMA</text>
+<rect x="410" y="167" width="155" height="54" rx="5" fill="#dceee8" stroke="#c3cbd4" stroke-width="1"/>
+<text x="487.5" y="199.0" font-size="13" fill="#273342" font-weight="400" text-anchor="middle">Shared-memory ring</text>
+<path d="M575,194 L685,194" fill="none" stroke="#607184" stroke-width="1.7" marker-end="url(#arrow)"/>
+<text x="630" y="177" font-size="14" fill="#5d6977" font-weight="400" text-anchor="middle">tcgen05.cp</text>
+<rect x="695" y="167" width="120" height="54" rx="5" fill="#dceee8" stroke="#c3cbd4" stroke-width="1"/>
+<text x="755.0" y="199.0" font-size="14" fill="#273342" font-weight="400" text-anchor="middle">TMEM scales</text>
+<path d="M823,194 L842,194" fill="none" stroke="#607184" stroke-width="1.7" marker-end="url(#arrow)"/>
+<text x="180" y="276" font-size="16" fill="#273342" font-weight="400" text-anchor="start">Operand and scale producers have separate rings and readiness barriers.</text>
+<text x="180" y="308" font-size="16" fill="#273342" font-weight="400" text-anchor="start">The MMA warp copies live scales into TMEM before using them.</text>
+<text x="180" y="342" font-size="15" fill="#5d6977" font-weight="400" text-anchor="start">Direct register-to-TMEM scale stores were an unselected experiment.</text>
+</g>
+</svg>

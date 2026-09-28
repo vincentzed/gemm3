@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="410" viewBox="0 0 960 410" role="img" aria-labelledby="title">
+<title id="title">Baseline: two accumulator views in one 512-column allocation</title>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#607184"/></marker></defs>
+<rect width="100%" height="100%" fill="white"/>
+<g font-family="DejaVu Sans, sans-serif" fill="#273342">
+<text x="28" y="34" font-size="22" fill="#273342" font-weight="600" text-anchor="start">Baseline: two accumulator views in one 512-column allocation</text>
+<text x="28" y="78" font-size="14" fill="#5d6977" font-weight="400" text-anchor="start">TMEM column</text>
+<text x="115.0" y="104" font-size="14" fill="#273342" font-weight="400" text-anchor="middle">0</text>
+<text x="449.4" y="104" font-size="14" fill="#273342" font-weight="400" text-anchor="middle">220</text>
+<text x="504.12" y="104" font-size="14" fill="#273342" font-weight="400" text-anchor="middle">256</text>
+<text x="838.52" y="104" font-size="14" fill="#273342" font-weight="400" text-anchor="middle">476</text>
+<text x="893.24" y="104" font-size="14" fill="#273342" font-weight="400" text-anchor="middle">512</text>
+<rect x="115" y="119" width="389.12" height="52" rx="5" fill="#dce9f5" stroke="#c3cbd4" stroke-width="1"/>
+<text x="309.56" y="150.0" font-size="15" fill="#273342" font-weight="400" text-anchor="middle">Accumulator view 0 · 256 columns</text>
+<rect x="449.4" y="185" width="389.12" height="52" rx="5" fill="#e8dff2" stroke="#c3cbd4" stroke-width="1"/>
+<text x="643.96" y="216.0" font-size="15" fill="#273342" font-weight="400" text-anchor="middle">Accumulator view 1 · 256 columns</text>
+<rect x="449.4" y="251" width="54.72" height="37" rx="5" fill="#fae9d5" stroke="#c3cbd4" stroke-width="1"/>
+<text x="476.76" y="274.5" font-size="14" fill="#273342" font-weight="400" text-anchor="middle">36</text>
+<rect x="838.52" y="119" width="54.72" height="118" rx="5" fill="#dceee8" stroke="#c3cbd4" stroke-width="1"/>
+<text x="865.88" y="183.0" font-size="14" fill="#273342" font-weight="400" text-anchor="middle">SF</text>
+<text x="476.76" y="311" font-size="15" fill="#273342" font-weight="400" text-anchor="middle">Shared intersection</text>
+<path d="M476.76,295 L476.76,289" fill="none" stroke="#607184" stroke-width="1.7" marker-end="url(#arrow)"/>
+<text x="28" y="350" font-size="17" fill="#273342" font-weight="400" text-anchor="start">View 0 drains its high columns first; view 1 drains its low columns first.</text>
+<text x="28" y="384" font-size="16" fill="#273342" font-weight="400" text-anchor="start">Read the 36-column intersection → fence TMEM reads → release for the next tile.</text>
+</g>
+</svg>

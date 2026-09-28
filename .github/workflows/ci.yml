@@ -1,0 +1,19 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  lint:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v6
+      - name: Install ruff
+        run: pip install ruff==0.11.13
+      - name: Ruff check
+        run: ruff check nvfp4_gemm_cute/ tests/ benchmarks/ examples/
+      - name: Ruff format
+        run: ruff format --check nvfp4_gemm_cute/ tests/ benchmarks/ examples/

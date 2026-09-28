@@ -1,0 +1,19 @@
+nvfp4-gemm-cute
+Copyright 2026 the nvfp4-gemm-cute authors
+
+This product includes software derived from FlashInfer
+(https://github.com/flashinfer-ai/flashinfer), licensed under the Apache License 2.0:
+  nvfp4_gemm_cute/kernel.py    <- flashinfer/gemm/kernels/dense_blockscaled_gemm_sm103.py
+  nvfp4_gemm_cute/epilogue.py  <- flashinfer/gemm/kernels/epilogue_utils.py
+  (base: flashinfer PR #4866, "perf(gemm): optimize SM103 CuTe DSL mm_fp4 kernel")
+
+GEMM³ started with Ash Xu (ashxudev)'s changes in FlashInfer PR #4866,
+at revision fd79d4e6b6b301d44073f17c9be3fa7758654933. We gratefully
+acknowledge Ash's SM103 accumulator-overlap port and output-store fixes,
+the earlier SM103 work by nv-yunzheq in PR #2888, the shared alpha
+epilogues contributed by Vinnie6167 in PR #4526, and the FlashInfer and
+NVIDIA CUTLASS contributors. See docs/kernel.md for provenance.
+
+FlashInfer's SM103 kernel was ported from NVIDIA CUTLASS
+(https://github.com/NVIDIA/cutlass), CuTe DSL example
+sm103_dense_blockscaled_gemm_persistent.py, licensed under the BSD 3-Clause License.

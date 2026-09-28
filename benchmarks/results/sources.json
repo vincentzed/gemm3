@@ -1,0 +1,39 @@
+{
+  "fast.cu": {
+    "url": "https://github.com/pranjalssh/fast.cu.git",
+    "commit": "2dfe5e26aecfd9e5f27bf9d5837deea01acda24b"
+  },
+  "ThunderKittens": {
+    "url": "https://github.com/HazyResearch/ThunderKittens.git",
+    "commit": "67845f5fa48d05343dbbc1ba1403f11061f08d2d"
+  },
+  "quack": {
+    "url": "https://github.com/Dao-AILab/quack.git",
+    "commit": "35266c3298f0e9bf6d5f46c30aace2eaeae517e3"
+  },
+  "DeepGEMM": {
+    "url": "https://github.com/deepseek-ai/DeepGEMM.git",
+    "commit": "78b69000794d0937b47ae3387eff7663410264d1",
+    "role": "Inspected and excluded: NVFP4 entry point wraps cuBLASLt"
+  },
+  "flashinfer": {
+    "url": "https://github.com/flashinfer-ai/flashinfer.git",
+    "commit": "f4d45edf1603eb9368e22c1340637fcf147e970b"
+  },
+  "cudnn-frontend": {
+    "url": "https://github.com/NVIDIA/cudnn-frontend.git",
+    "commit": "45c9c3f7f1a83711acc31bb4c1fb028d987f728a"
+  },
+  "gpu-repo-release-notes": {
+    "url": "https://github.com/vincentzed/gpu-repo-release-notes.git",
+    "commit": "e458cdafe5ccfcd2546daf90a2dc1763af377969"
+  },
+  "CUTLASS": {
+    "commit": "b46b16d003484063bca4ed365e44095c4c6ed633",
+    "source": "flashinfer/3rdparty/cutlass"
+  },
+  "CCCL": {
+    "commit": "16bd510c9b712e82b0ab6cbb630d8e29ba1f7116",
+    "source": "flashinfer/3rdparty/cccl"
+  }
+}
